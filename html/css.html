@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <link rel="StyleSheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../images/logo.png">
+</head>
+<body class="css">
+    <nav class="navBar">
+        <img src="../images/logo.png">
+        <div class="nav-links" > 
+            <ul>
+                <li><a href="index.html" target="blank">ACCUEIL</a></li>
+                <li><a href="html.html" target="blank">HTML</a></li>
+                <li><a href="css.html" target="blank">CSS</a></li>
+                <li><a href="js.html" target="blank">JAVA SCRIPT</a></li>
+                <li><a href="contact.html" target="blank">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section>
+        <div class="plan">
+            <div>
+                <h1><strong>CSS</strong></h1>
+                <center><img class="icon" src="../images/css icon.png" alt="css_icon"></center>
+            </div>
+            <ol>
+                <li><a href="#principe">Principe des feuilles CSS</a><br/></li>
+                <li><a href="#selecteurs">Les Sélecteurs CSS</a><br/></li>
+            </ol>
+        </div>
+    </section>
+   <div class="row">
+        <div id="principe" title="Principe des feuilles CSS">
+        
+            <h2><strong>Principe des feuilles CSS</strong></h2>
+            <p>C'est dans la feuille de style CSS que l'on va déclarer toute la mise en forme des pages : le positionnement des éléments, l'image de fond, les polices de caractère, les couleurs, etc.
+                Celle-ci sera liée à chaque page html. Ainsi, lorsqu'on en modifiera un élément, cela se répercutera immédiatement sur toutes les pages html. Puissant, pratique, bref : indispensable.</p>
+            <center><img class="schema" src="../images/cssSchema.gif" alt="css_Schema"></center>
+            <p>Pour une mise en page souple et cohérente, on divisera la page en "blocs" (des div, appelés aussi "boites" ou "calques"), qui ont l'avantage de pouvoir être déplacés de gauche à droite, ou de haut en bas grâce aux CSS.</p>
+            
+            <center><img class="schema" src="../images/div.png" alt="div_Schema"></center>
+        </div>
+     </div>     
+    <div class="row">
+        <div id="selecteurs" title="Sélecteurs CSS">
+            <h2><strong>Les Sélecteurs CSS</strong></h2>
+            <p>Un sélecteur CSS est un mot-clef qui permet de désigner une catégorie d'éléments de la page éventuellement de nature différente ou une relation entre deux éléments. </p>
+            <center><img class="schema" src="../images/syntaxe_css.png" alt="syntaxe_Schema"></center>
+            <h3><strong>Type de sélécteurs</h3></strong>
+            <p>On peut regrouper les sélécteurs en 3 types :</p>
+            <p style="text-decoration:underline;">Sélecteurs de type, de classe, et d'ID</p>
+            <p>Ce groupe inclut les sélecteurs ciblant les élements HTML tels que <<span>h1</span>> :</p>
+            <div class="code-example">
+                <
+                <span>h1</span>
+                >
+                <span>{</span>
+                <span>}</span>
+            </div>
+            <p>On trouve aussi les sélecteurs ciblant une classe :</p>
+            <div class="code-example">
+                <span>.box</span> 
+                <span>{</span> 
+                <span>}</span>
+            </div>
+            <p>ou un ID :</p>
+            <div class="code-example">
+                <span>#unique</span> 
+                <span>{</span> 
+                <span>}</span>
+            </div>
+            <p style="text-decoration:underline;">Pseudo-classes</p>
+            <p>Ce groupe de sélecteurs inclut les pseudo-classes, qui ciblent des éléments dans un état donné. Par exemple, la pseudo-classe :hover sélectionne un élément seulement s'il est survolé par le pointeur de la souris :</p>
+            <div class="code-example">
+                <span>a:hover</span> 
+                <span>{</span> 
+                <span>}</span>
+            </div>
+            <p style="text-decoration:underline;">Combinateurs</p>
+            <p>Dans la dernière catégorie, on combine les sélecteurs pour cibler plus finement les éléments dans nos documents. L'exemple suivant sélectionne les paragraphes enfants directs de <<span>article</span>> grâce au combinateur enfant (>) :</p>
+            <div class="code-example">
+                <span>article > p</span> 
+                <span>{</span> 
+                <span>}</span>
+            </div>
+        </div>    
+    </div>
+
+
+    <footer>
+        <div class="footer-content">
+            <div class="items">
+                <h3> HTML 5</h3>
+                <ul>
+                    <li><a href="index.html#intro" target="_blank">Introduction</a></li>
+                    <li><a href="html.html#attributs" target="_blank">Les balises et leurs attributs</a></li>
+                    <li><a href="html.html#paire" target="_blank">Les balises en paires</a></li>
+                    <li><a href="html.html#courantes" target="_blank">Balises les plus courantes</a></li>
+                </ul>
+            </div>
+
+            <div class="items">
+                <h3>CSS</h3>
+                <ul>
+                    <li><a href="index.html#intro">Introduction</a></li>
+                    <li><a href="#principe">Principe des feuilles CSS</a></li>
+                    <li><a href="#selecteurs">Sélecteurs CSS</a></li>
+                </ul>
+            </div>
+            
+            <div class="items">
+                <h3>JavaScript</h3>
+                <ul>
+                    <li><a href="index.html#intro" target="_blank">Introduction</a></li>
+                    <li><a href="js.html#def" target="_blank">C'est quoi JS</a></li>
+                    <li><a href="js.html#variables" target="_blank">Les variables</a></li>
+                </ul>
+            </div>
+                        
+            <div class="items">
+                <a href="index.html" class="logo" ><img src="../images/logo.png"></a>
+                <div class="social">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+
+        </div>        
+                
+            
+    </footer>
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
+</body>
+</html>

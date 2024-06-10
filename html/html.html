@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML</title>
+    <link rel="StyleSheet" type="text/css" href="../css/style.css">
+    <link rel="icon" href="../images/logo.png">
+</head>
+<body class="html">
+    
+    <nav class="navBar">
+        <img src="../images/logo.png">
+        <div class="nav-links" > 
+            <ul>
+                <li><a href="index.html" target="blank">ACCUEIL</a></li>
+                <li><a href="html.html" target="blank">HTML</a></li>
+                <li><a href="css.html" target="blank">CSS</a></li>
+                <li><a href="js.html" target="blank">JAVA SCRIPT</a></li>
+                <li><a href="contact.html" target="blank">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section>
+        <div class="plan">
+            <div>
+                <h1><strong>HTML</strong></h1>
+                <center><img class="icon" src="../images/html icon.png" alt="html_icon"></center>
+            </div>
+            <ol>
+                <li><a href="#attributs">Les balises et leurs attributs</a><br/></li>
+                <li><a href="#paire">Les balises en paire</a><br/></li>
+                <li><a href="#courantes">Balises les plus courantes</a></li>
+            </ol>
+        </div>
+        <div class="row">
+            <div id="attributs" title="Les balises html et leurs attributs">
+                <h2><strong>Les balises et leurs attributs</strong></h2>
+                <h3>1. Les balises :</h3>
+                <p>Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles à l'écran pour vos visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.
+                    Les balises se repèrent facilement. Elles sont entourées de « chevrons », c'est-à-dire des symboles < et >, comme ceci : &lt;balise&gt;
+                    </p>
+                <p>À quoi est-ce qu'elles servent ? Elles indiquent la nature du texte qu'elles encadrent. Elles veulent dire par exemple : « Ceci est le titre de la page », « Ceci est une image », « Ceci est un paragraphe de texte », etc.</p>
+                <h3>2. Les attributs :</h3>
+                <p>Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur, comme ceci :</p>
+                <p>&lt;balise attribut="valeur"&gt;</p>
+                <center><table border="">
+                    <caption style="color:#ccc; padding-bottom:5%;font-size: larger;"><strong><u>Liste des attributs HTML</u></strong></caption>
+                    <tr>
+                        <th>Attribut</th>
+                        <th>Balise</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <th>accept</th>
+                        <td>
+                            <
+                            <span class="balise">form</span>
+                            >,<
+                            <span class="balise">input</span>
+                            >
+                        </td>
+                        <td>Les types de fichier acceptés par le serveur</td>
+                    </tr>
+                    <tr>
+                        <th>accesskey</th>
+                        <td>TOUS</td>
+                        <td>Définit un raccoucrci clavier pour activer ou sélectionner un élément</td>
+                    </tr>
+                    <tr>
+                        <th>align</th>
+                        <td>
+                            <
+                            <span class="balise">caption</span>
+                            >,<
+                            <span class="balise">hr</span>
+                            >,<
+                            <span class="balise">iframe</span>
+                            >,<
+                            <span class="balise">img</span>
+                            >,<
+                            <span class="balise">table</span>
+                            >,<
+                            <span class="balise">td</span>
+                            >,<
+                            <span class="balise">th</span>
+                            >
+                        </td>
+                        <td>Définit l'alignement horizontal de l'élément. Exemple: left, right, center et justify.</td>
+                    </tr>
+                    <tr>
+                        <th>alt</th>
+                        <td>
+                            <
+                            <span class="balise">area</span>
+                            >,<
+                            <span class="balise">img</span>
+                            >,<
+                            <span class="balise">input</span>
+                            >
+                        </td>
+                        <td>Texte alternatif lorsque l'élément ne peut être affiché.</td>
+                    </tr>
+                    <tr>
+                        <th>autoplay</th>
+                        <td>
+                            <
+                            <span class="balise">audio</span>
+                            >,<
+                            <span class="balise">video</span>
+                            >
+                        </td>
+                        <td>Chargement automatique de l'élement multimédia.</td>
+                    </tr>
+                    <tr>
+                        <th>charset</th>
+                        <td>
+                            <
+                            <span class="balise">meta</span>
+                            >,<
+                            <span class="balise">script</span>
+                            >
+                        </td>
+                        <td>Définit le type de codage de l'élement</td>
+                    </tr>
+                    <tr>
+                        <th>class</th>
+                        <td>TOUS</td>
+                        <td>Permet d'associer une classe à un élément</td>
+                    </tr>
+                    <tr>
+                        <th>form</th>
+                        <td>
+                            <
+                            <span class="balise">button</span>
+                            >,<
+                            <span class="balise">fieldset</span>
+                            >,<
+                            <span class="balise">input</span>
+                            >,<
+                            <span class="balise">label</span>
+                            >,<
+                            <span class="balise">object</span>
+                            >,<
+                            <span class="balise">output</span>
+                            >,<
+                            <span class="balise">progress</span>
+                            >,<
+                            <span class="balise">select</span>
+                            >,<
+                            <span class="balise">textarea</span>
+                            >
+                        </td>
+                        <td>Indique le formulaire qui est propriétaire de l'élément.</td>
+                    </tr>
+                    <tr>
+                        <th>href</th>
+                        <td>
+                            <
+                            <span class="balise">a</span>
+                            >,<
+                            <span class="balise">area</span>
+                            >,<
+                            <span class="balise">base</span>
+                            >,<
+                            <span class="balise">link</span>
+                            >
+                        </td>
+                        <td>L'url de la ressource associée</td>
+                    </tr>
+                    <tr>
+                        <th>id</th>
+                        <td>TOUS</td>
+                        <td>Permet d'associer un identifiant à un élément</td>
+                    </tr>
+                    <tr>
+                        <th>src</th>
+                        <td>
+                            <
+                            <span class="balise">audio</span>
+                            >,<
+                            <span class="balise">embed</span>
+                            >,<
+                            <span class="balise">iframe</span>
+                            >,<
+                            <span class="balise">img</span>
+                            >,<
+                            <span class="balise">input</span>
+                            >,<
+                            <span class="balise">script</span>
+                            >,<
+                            <span class="balise">source</span>
+                            >,<
+                            <span class="balise">track</span>
+                            >,<
+                            <span class="balise">video</span>
+                            >
+                        </td>
+                        <td>Indique la source de l'élément. Pour l'image par exemple on indique où elle se trouve sur le serveur.</td>
+                    </tr>
+                    <tr>
+                        <th>title</th>
+                        <td>TOUS</td>
+                        <td>Permet d'indiquer à l'utilisateur une information, visible lors du survol de la souris sur celui-ci.</td>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">type</th>
+                        <td>
+                            <
+                            <span class="balise">button</span>
+                            >,<
+                            <span class="balise">embed</span>
+                            >,<
+                            <span class="balise">input</span>
+                            >,<
+                            <span class="balise">object</span>
+                            >,<
+                            <span class="balise">script</span>
+                            >,<
+                            <span class="balise">style</span>
+                            >
+                            
+                        </td>
+                        <td>
+                            Indique le type de l'élément.
+                        </td>
+                            <tr>
+                            <td>
+                            <
+                            <span class="balise">button</span>
+                            >,<
+                            <span class="balise">option</span>
+                            >,<
+                            <span class="balise">input</span>
+                            >,<
+                            <span class="balise">li</span>
+                            >
+                            </td>
+                            <td>Indique la valeur de l'élément.</td>
+                            </tr>
+                                
+                            
+                            </tr>
+                        </td>
+                    </tr>
+                </table></center>
+                    
+            </div>
+        
+        </div>
+        <div class="row">
+            <div id="paire" title="Les balises en paire">
+                <h2><strong>Les balises en paire</strong></h2>
+                <p>Elle fonctionnent par deux : une balise ouvrante et une balise fermante. La balise fermante se distingue par l'ajout du caractère "/".</p>
+                <p>Une balise de ce type agit sur le texte qu'elle encadre.</p>
+                <p>Exemples :</p>
+                <ul class="exemple">
+                    <li>&lt;h1&gt; CE TEXTE EST UN TITRE &lt;/h1&gt;</li>
+                    <li>&lt;strong&gt; <strong>Ce texte est important</strong> &lt;/strong&gt;</li>
+                    <li>&lt;p&gt; Ce texte est un paragraphe &lt;/p&gt;</li>
+                </ul>
+                </div>
+            </div>
+        </div>  
+        <div class="row">
+            <div id="courantes" title=" Balises les plus courantes ">
+                <h2><strong>Les balises les plus courantes</strong></h2>
+                    <p>La liste ci-dessous présente les balises HTML les plus fréquemment rencontrées :</p>
+                        <ul class="exemple">
+                            <li>&lt;h1&gt; à &lt;h6&gt; : titre de niveau de 1 à 6</li>
+                            <li>&lt;p&gt; : paragraphe</li>
+                            <li>&lt;a&gt; : lien hypertexte</li>
+                            <li>&lt;img&gt; : image</li>
+                            <li>&lt;br&gt; : saut de ligne</li>
+                            <li>&lt;div&gt; : division du contenu, sert à structurer les différentes sections de la page</li>
+                            <li>&lt;span&gt; : conteneur générique de texte, ne modifie pas le contenu mais permet d'attibuer des propriétés à une portion de texte</li>
+                            <li>&lt;table&gt; : tableau</li>
+                            <li>&lt;tr&gt; : ligne d'un tableau</li>
+                            <li>&lt;td&gt; : cellule d'un tableau</li>
+                            <li>&lt;ul&gt; : liste non ordonnée (avec des puces)</li>
+                            <li>&lt;ol&gt; : liste ordonnée (numérotée)</li>
+                            <li>&lt;li&gt; : élément d'une liste</li>
+                            <li>&lt;iframe&gt; : intégration d'une autre page HTML dans la page courante</li>
+                            <li>&lt;video&gt; : video</li>
+                        </ul>
+           </div>
+        </div>    
+        
+
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="items">
+                <h3> HTML 5</h3>
+                <ul>
+                    <li><a href="index.html#intro">Introduction</a></li>
+                    <li><a href="#attributs">Les balises et leurs attributs</a></li>
+                    <li><a href="#paire">Les balises en paires</a></li>
+                    <li><a href="#courantes">Balises les plus courantes</a></li>
+                </ul>
+            </div>
+
+            <div class="items">
+                <h3>CSS</h3>
+                <ul>
+                    <li><a href="index.html#intro" target="_blank">Introduction</a></li>
+                    <li><a href="css.html#principe" target="_blank">Principe des feuilles CSS</a></li>
+                    <li><a href="css.html#selecteurs" target="_blank">Sélecteurs CSS</a></li>
+                </ul>
+            </div>
+            
+            <div class="items">
+                <h3>JavaScript</h3>
+                <ul>
+                    <li><a href="index.html#intro" target="_blank">Introduction</a></li>
+                    <li><a href="js.html#def" target="_blank">C'est quoi JS</a></li>
+                    <li><a href="js.html#variables" target="_blank">Les variables</a></li>
+                </ul>
+            </div>
+                        
+            <div class="items">
+                <a href="index.html" class="logo" ><img src="../images/logo.png"></a>
+                <div class="social">
+                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                    <a href="#"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>
+            </div>
+
+        </div>        
+                
+            
+    </footer>
+
+    
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+</html>
